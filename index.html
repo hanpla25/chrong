@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <title>chrong</title>
   </head>
-  <body></body>
+  <body>
+    <!--시계 영역-->
+    <div class="clock">
+      <span></span>
+    </div>
+    <!--그리팅 영역-->
+    <div class="greet-box">
+      <form class="greet-form">
+        <input
+          type="text"
+          placeholder="What is your name?"
+          required
+          maxlength="15"
+        />
+        <button type="submit">Log in</button>
+      </form>
+      <div class="greet-welcome hidden">
+        <span></span>
+      </div>
+    </div>
+
+    <script src="./JS/greeting.js"></script>
+    <script src="./JS/clock.js"></script>
+  </body>
 </html>
