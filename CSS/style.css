@@ -3,11 +3,124 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.hidden {
-  display: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+}
+.clock {
+  padding: 150px 100px 100px;
+}
+.clock span {
+  color: white;
+  font-size: 100px;
+}
+.greet-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+}
+.placeholder {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.greet-form input {
+  font-size: 20px;
+  color: white;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid white;
+  background: none;
+  outline: none;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.greet-form input:focus {
+  outline: none;
+}
+.greet-box span {
+  color: white;
+}
+.greet-welcome {
+  margin-top: 84px;
+  font-size: 40px;
+}
+.todo-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.todo-box-buttonbox {
+  text-align: center;
+}
+.todo-box button {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.todo-box-ballon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-box-ballon::before {
+  content: "";
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(32, 32, 32);
+}
+.todo-box-ballon ul {
+  border: 1px solid white;
+  background: rgb(32, 32, 32);
+  width: 300px;
+  min-height: 100px;
+  padding: 10px;
+}
+.todo-box-ballon ul li {
+  list-style: none;
 }
 .quote-box {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  bottom: 30px;
+}
+.quote-box span {
+  color: white;
+}
+.hidden {
+  display: none;
+}
+.checkbtn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 3px;
+  background: white;
+}
+.checked {
+  display: none;
+  text-align: center;
+  font-size: 10px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  background: rgb(6, 60, 175);
+  width: 15px;
+  height: 15px;
+}
+.checked-text {
+  color: gray !important;
+  text-decoration: line-through;
+}
+.todo-text {
+  color: white;
 }

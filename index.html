@@ -7,29 +7,41 @@
     <title>chrong</title>
   </head>
   <body>
-    <!--시계 영역-->
-    <div class="clock">
-      <span></span>
-    </div>
-    <!--그리팅 영역-->
-    <div class="greet-box">
-      <form class="greet-form">
-        <input
-          type="text"
-          placeholder="What is your name?"
-          required
-          maxlength="15"
-        />
-        <button type="submit">Log in</button>
-      </form>
-      <div class="greet-welcome hidden">
+    <div class="container">
+      <!--시계 영역-->
+      <div class="clock">
         <span></span>
       </div>
-    </div>
-    <!--명언 영역-->
-    <div class="quote-box">
-      <span class="quote">qoute</span>
-      <span class="author">author</span>
+      <!--그리팅 영역-->
+      <div class="greet-box">
+        <form class="greet-form">
+          <span class="placeholder">What is your name?</span>
+          <input type="text" required maxlength="15" />
+        </form>
+        <div class="greet-welcome hidden">
+          <span></span>
+        </div>
+      </div>
+      <!--명언 영역-->
+      <div class="todo-box">
+        <div class="todo-box-buttonbox">
+          <button>Todo</button>
+        </div>
+        <div class="todo-box-ballon">
+          <ul>
+            <li>
+              <span class="checkbtn"></span>
+              <span class="checked">&#10003;</span>
+              <span class="todo-text">텍스트</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--명언 영역-->
+      <div class="quote-box">
+        <span class="quote">qoute</span>
+        <span class="author">author</span>
+      </div>
     </div>
 
     <script src="./JS/greeting.js"></script>
