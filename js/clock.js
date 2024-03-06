@@ -3,7 +3,7 @@ const clockBox = document.querySelector(".clock");
 const time = clockBox.querySelector(".time");
 const daytext = clockBox.querySelector(".daytext");
 
-// 함수
+// 시간 업데이트 함수
 const updateTime = () => {
   const date = new Date();
   const dayNames = ["일", "월", "화", "수", "목", "금", "토"];
