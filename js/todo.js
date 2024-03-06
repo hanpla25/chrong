@@ -1,4 +1,4 @@
-// DOM 요소 가져오기
+// DOM
 const todoButton = document.querySelector(".todo-button");
 const ballon = document.querySelector(".todo-box-ballon");
 const todoForm = document.querySelector(".todoform");
