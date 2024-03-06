@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+}
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 100px 30px;
+}
+.time {
+  color: white;
+  font-size: 100px;
+}
+.daytext {
+  color: white;
+  font-size: 40px;
+}
+.greet-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+}
+.placeholder {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.greet-form input {
+  font-size: 20px;
+  color: white;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid white;
+  background: none;
+  outline: none;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.greet-form input:focus {
+  outline: none;
+}
+.greet-box span {
+  color: white;
+}
+.greet-welcome {
+  margin-top: 84px;
+  font-size: 40px;
+}
+.todo-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.todo-box-buttonbox {
+  text-align: center;
+}
+.todo-box button {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.todo-box-ballon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-box-ballon::before {
+  content: "";
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(53, 53, 53);
+}
+.todo-box-ballon ul {
+  background: rgb(53, 53, 53);
+  width: 300px;
+  min-height: 100px;
+  padding: 10px;
+  max-height: 225px;
+  overflow: scroll;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.todo-box-ballon ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.todoform {
+  width: 300px;
+  background: rgb(53, 53, 53);
+  padding: 10px;
+}
+.todoform input {
+  border: none;
+  width: 100%;
+  background: none;
+  border-bottom: 3px solid white;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+}
+.todoform input::placeholder {
+  color: white;
+}
+.todoform input:focus {
+  outline: none;
+}
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+}
+.quote-box span {
+  color: white;
+}
+.hidden {
+  display: none !important;
+}
+.checkbtn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: white;
+  margin-right: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.checked {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  background: rgb(6, 60, 175);
+  font-size: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todo-text {
+  color: white;
+}
+.todo-text-done {
+  text-decoration: line-through;
+  color: rgb(155, 155, 155);
+}
+.li-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logout {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.logoutBtn {
+  border: none;
+  background: rgb(65, 65, 65);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
