@@ -11,9 +11,7 @@ let todos = JSON.parse(localStorage.getItem("todos")) || [];
 // 할 일 목록 렌더링 함수
 const renderTodos = () => {
   if (!todoUl) return;
-
   todoUl.innerHTML = todos.map(renderTodoItem).join("");
-
   addEventListenersToTodoItems();
 };
 
