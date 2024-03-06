@@ -8,10 +8,17 @@
   </head>
   <body>
     <div class="container">
+      <!--버튼 영역-->
+      <div class="logout">
+        <button class="logoutBtn hidden" type="button">로그아웃</button>
+      </div>
+      
       <!--시계 영역-->
       <div class="clock">
-        <span></span>
+        <span class="time"></span>
+        <span class="daytext"></span>
       </div>
+
       <!--그리팅 영역-->
       <div class="greet-box">
         <form class="greet-form">
@@ -22,21 +29,20 @@
           <span></span>
         </div>
       </div>
-      <!--명언 영역-->
-      <div class="todo-box">
+
+      <!--투두 영역-->
+      <div class="todo-box hidden">
         <div class="todo-box-buttonbox">
-          <button>Todo</button>
+          <button class="todo-button">Todo</button>
         </div>
-        <div class="todo-box-ballon">
-          <ul>
-            <li>
-              <span class="checkbtn"></span>
-              <span class="checked">&#10003;</span>
-              <span class="todo-text">텍스트</span>
-            </li>
-          </ul>
+        <div class="todo-box-ballon hidden">
+          <ul class="todo-box-ul"></ul>
+          <form class="todoform">
+            <input class="todo-input" type="text" placeholder="add Todo" />
+          </form>
         </div>
       </div>
+
       <!--명언 영역-->
       <div class="quote-box">
         <span class="quote">qoute</span>
@@ -49,5 +55,6 @@
     <script src="./JS/quotesApi.js" type="module"></script>
     <script src="./JS/quote.js" type="module"></script>
     <script src="./JS/background.js"></script>
+    <script src="./JS/todo.js"></script>
   </body>
 </html>
