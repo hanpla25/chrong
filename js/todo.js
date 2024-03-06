@@ -41,6 +41,7 @@ const addEventListenersToTodoItems = () => {
     });
   });
 
+  // 삭제버튼
   document.querySelectorAll(".deleteBtn").forEach((button) => {
     button.addEventListener("click", (e) => {
       deleteTodoItem(e.target.dataset.index);
